@@ -1,6 +1,6 @@
 # UFO Sightings
 
-https://kayannr.github.io/javascript-challenge/UFO-level-2/index.html
+https://kayannr.github.io/UFO-Sightings/UFO-level-2/index.html
 
 ## Background
 
