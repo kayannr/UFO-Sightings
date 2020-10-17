@@ -15,10 +15,11 @@ function populateTable(data){
     // Iterate through each object in the array of data and call anonymous
     // arrow function to append to the table
     data.forEach((UFOsighting) => {
+        // append a new row within tbody element
         var row = tbody.append("tr");
         // Iterate through each key and value in an object
         Object.entries(UFOsighting).forEach(([key, value]) => {
-            // append data
+            // append data as td element 
             var cell = row.append("td");
             cell.text(value);
         });
