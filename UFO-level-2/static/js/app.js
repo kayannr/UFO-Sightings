@@ -1,19 +1,19 @@
-// from data.js
+// Import data from data.js
 var tableData = data;
 
 // *********************************
 //          DATA TABLE
 // *********************************
-// Use D3 to select the table
+// Use D3 to select the table element 
 var table = d3.select("table");
 
-// Use D3 to select the table body
+// Use D3 to select the table body element 
 var tbody = d3.select("tbody");
 
-// Create a function to build table 
+// Create a function to build the table using the imported dataset 
 function populateTable(data){
-    // Iterate through each object in the array and call anonymous
-    // arrow function
+    // Iterate through each object in the array of data and call anonymous
+    // arrow function to append to the table
     data.forEach((UFOsighting) => {
         var row = tbody.append("tr");
         // Iterate through each key and value in an object
