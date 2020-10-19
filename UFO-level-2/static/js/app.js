@@ -66,7 +66,6 @@ function handleClick() {
         || data.state === inputState  || data.country === inputCountry  || data.shape === inputShape
     );
     // console.log(filterSomeInput)
-
     // let inputs = {filterAllinput, filterSomeInput}; 
 
     // Conditions
@@ -75,6 +74,7 @@ function handleClick() {
         if (filterAllinput.length === 0){
             tbody.append("tr").append("td").text("No results for values entered."); 
         }; 
+        // Populate the table with filtered data
         populateTable(filterAllinput); 
     }
     else if (filterSomeInput.length !== 0 ) { 
@@ -82,6 +82,7 @@ function handleClick() {
         if (filterSomeInput.length === 0){
         tbody.append("tr").append("td").text("No results for values entered."); 
         }; 
+        // Populate the table with filtered data
         populateTable(filterSomeInput); 
     }
     else{ 
