@@ -8,3 +8,4 @@ An interactive web page that displays a table dynamically based upon a [dataset]
 
 ![ufo](UFO-level-2/static/images/wp.png)
 
+![ufo](UFO-level-2/static/images/2.PNG)

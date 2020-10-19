@@ -97,6 +97,7 @@ function handleClick() {
 var resetButton = d3.select("#reset-btn");
 resetButton.on("click", () => {
     tbody.html("");
+    // populate the table with original dataset
     populateTable(tableData)
     console.log("Table reset.")
 });
