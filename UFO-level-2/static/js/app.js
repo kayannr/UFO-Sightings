@@ -32,7 +32,7 @@ populateTable(tableData);
 // *********************************
 //    MULTIPLE SEARCH CATEGORIES
 // *********************************
-// Select the filter button
+// Select the filter button element 
 var button = d3.select("#filter-btn");
 // Create event handler
 button.on("click", handleClick);
@@ -53,14 +53,14 @@ function handleClick() {
     var inputCountry = inputElement4.property("value").trim();
     var inputShape = inputElement5.property("value").trim();
     // console.log(inputDate);
-    var combinedInput = {inputDate, inputCity, inputState, inputCountry, inputShape}
-
-
+    // var combinedInput = {inputDate, inputCity, inputState, inputCountry, inputShape}
+    // Save all input values into a variable 
     var filterAllinput = tableData.filter(data => 
         data.datetime === inputDate && data.city === inputCity 
         && data.state === inputState  && data.country === inputCountry  && data.shape === inputShape
     );
     // console.log(filterAllinput)
+    // Save some input values into a variable 
     var filterSomeInput = tableData.filter(data => 
         data.datetime === inputDate || data.city === inputCity 
         || data.state === inputState  || data.country === inputCountry  || data.shape === inputShape
