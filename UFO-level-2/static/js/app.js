@@ -26,6 +26,7 @@ function populateTable(data){
     });
 };  
 
+// Pass dataset into a function to populate the table 
 populateTable(tableData);
 
 // *********************************
